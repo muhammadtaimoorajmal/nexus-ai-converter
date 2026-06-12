@@ -1,0 +1,19 @@
+{
+  "name": "meeting-to-tasks-converter",
+  "version": "1.0.0",
+  "description": "Meeting to Tasks Converter Monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=frontend\" \"npm run dev --workspace=@meeting-to-tasks/backend\"",
+    "build": "npm run build --workspaces",
+    "start": "concurrently \"npm run start --workspace=frontend\" \"npm run start --workspace=@meeting-to-tasks/backend\"",
+    "lint": "npm run lint --workspaces"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
+}

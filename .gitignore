@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+.env
+.DS_Store
+*.log
+.next/
+coverage/
+apps/backend/uploads/
+*.mp4
+*.mp3
+*.wav
