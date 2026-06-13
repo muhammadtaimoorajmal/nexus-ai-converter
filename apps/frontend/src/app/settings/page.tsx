@@ -20,6 +20,11 @@ export default function SettingsPage() {
   const [isSaving, setIsSaving] = useState(false);
   const setAuth = useAuthStore((state) => state.setAuth);
 
+  const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   useEffect(() => {
     // Fetch profile to get existing details
     const fetchProfile = async () => {
@@ -68,6 +73,8 @@ export default function SettingsPage() {
       setIsSaving(false);
     }
   };
+
+  if (!isMounted) return null;
 
   return (
     <div className="max-w-4xl mx-auto space-y-8">
