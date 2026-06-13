@@ -16,7 +16,7 @@ export default function SettingsPage() {
   const [bio, setBio] = useState(user?.bio || "");
   const [company, setCompany] = useState(user?.company || "");
   const [openAiKey, setOpenAiKey] = useState("");
-  const [aiProvider, setAiProvider] = useState<"openai" | "groq">(user?.aiProvider as any || "openai");
+  const [aiProvider, setAiProvider] = useState<"openai" | "groq">((user as any)?.aiProvider || "openai");
   const [isSaving, setIsSaving] = useState(false);
   const setAuth = useAuthStore((state) => state.setAuth);
 
