@@ -28,10 +28,12 @@
 
 ## 📸 Sneak Peek
 
-> **Tip:** You can drag and drop your screenshots here to replace these placeholders!
-
 <div align="center">
-  <img src="https://placehold.co/1200x600/111827/FFFFFF.png?text=Drop+Your+Screenshot+Here" alt="Dashboard" width="800" style="border-radius: 8px;"/>
+  <img src="Images/1.png" alt="Landing Page" width="800" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); margin-bottom: 20px;"/>
+  <br/><br/>
+  <img src="Images/4.png" alt="Dashboard" width="800" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); margin-bottom: 20px;"/>
+  <br/><br/>
+  <img src="Images/5.png" alt="Tasks View" width="800" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);"/>
 </div>
 
 <br/>
