@@ -31,7 +31,7 @@
 > **Tip:** You can drag and drop your screenshots here to replace these placeholders!
 
 <div align="center">
-  <img src="https://via.placeholder.com/1200x600/000000/FFFFFF/?text=Beautiful+Dark-Mode+Dashboard" alt="Dashboard" width="800" style="border-radius: 8px;"/>
+  <img src="https://placehold.co/1200x600/111827/FFFFFF.png?text=Drop+Your+Screenshot+Here" alt="Dashboard" width="800" style="border-radius: 8px;"/>
 </div>
 
 <br/>
