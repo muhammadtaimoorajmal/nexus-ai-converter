@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import multer from 'multer';
+import os from 'os';
 import { uploadMeetingFile, createMeetingText, getUserMeetings, getMeetingById, deleteMeeting, reprocessMeeting } from '../controllers/meetingController';
 import { authMiddleware } from '../middlewares/authMiddleware';
 
@@ -7,7 +8,7 @@ const router = Router();
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, 'uploads/');
+    cb(null, os.tmpdir());
   },
   filename: (req, file, cb) => {
     const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1e9);
