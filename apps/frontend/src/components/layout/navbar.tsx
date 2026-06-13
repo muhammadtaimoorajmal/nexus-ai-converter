@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { LogOut, User } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { MobileSidebar } from "./mobile-sidebar";
 
 export const Navbar = () => {
   const { user, logout } = useAuthStore();
@@ -26,6 +27,7 @@ export const Navbar = () => {
 
   return (
     <div className="flex items-center p-4 h-16 border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60 sticky top-0 z-40">
+      <MobileSidebar />
       <div className="flex-1 flex justify-center px-4">
         <GlobalSearch />
       </div>
