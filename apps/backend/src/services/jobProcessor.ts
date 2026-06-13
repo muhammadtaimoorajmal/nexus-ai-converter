@@ -141,8 +141,29 @@ export const processMeetingJob = async (meetingId: string) => {
     }
 
     console.log(`✅ Meeting ${meetingId} processed successfully!`);
+    
+    // Auto-delete the file to prevent memory/disk exhaustion
+    if (meeting.fileUrl && fs.existsSync(meeting.fileUrl)) {
+      try {
+        fs.unlinkSync(meeting.fileUrl);
+        meeting.fileUrl = '';
+        await meeting.save();
+        console.log(`🗑️ Cleaned up file: ${meeting.fileUrl}`);
+      } catch (e) {
+        console.error("Cleanup error:", e);
+      }
+    }
+
   } catch (error) {
     console.error(`❌ Error processing meeting ${meetingId}:`, error);
-    await Meeting.findByIdAndUpdate(meetingId, { status: 'error' });
+    try {
+      const m = await Meeting.findById(meetingId);
+      if (m && m.fileUrl && fs.existsSync(m.fileUrl)) {
+        fs.unlinkSync(m.fileUrl);
+        await Meeting.findByIdAndUpdate(meetingId, { status: 'error', fileUrl: '' });
+      } else {
+        await Meeting.findByIdAndUpdate(meetingId, { status: 'error' });
+      }
+    } catch(e) {}
   }
 };
