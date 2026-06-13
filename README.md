@@ -10,6 +10,16 @@ An enterprise-grade, full-stack AI application that effortlessly converts audio,
 [![Groq](https://img.shields.io/badge/Groq-AI_Engine-f55036?style=flat)](https://groq.com/)
 [![OpenAI](https://img.shields.io/badge/OpenAI-Whisper-412991?style=flat&logo=openai)](https://openai.com/)
 
+[**Live Demo**](https://nexus-ai-converter.vercel.app/) • [**Report Bug**](https://github.com/muhammadtaimoorajmal/nexus-ai-converter/issues) • [**Request Feature**](https://github.com/muhammadtaimoorajmal/nexus-ai-converter/issues)
+
+</div>
+
+## 📸 Sneak Peek
+
+> **Note:** Replace the placeholder below with an actual screenshot or GIF of the application!
+
+<div align="center">
+  <img src="https://via.placeholder.com/800x450.png?text=NexusAI+Dashboard+Screenshot" alt="Dashboard" width="800"/>
 </div>
 
 ## 🚀 Overview
@@ -18,28 +28,41 @@ An enterprise-grade, full-stack AI application that effortlessly converts audio,
 
 The architecture strictly separates the frontend client from the background AI processing engine to guarantee high performance, smooth UI rendering, and asynchronous heavy-lifting.
 
-## ✨ Features
+## ✨ Key Features
 
-- **Multi-Modal Uploads**: Seamlessly upload `.mp4` video files, `.mp3`/`.wav` audio files, or plain text meeting notes.
-- **Auto-Language Detection**: The AI natively identifies the spoken language and transcribes it directly in that exact language with near 100% accuracy.
-- **Smart Provider Auto-Routing**: Paste your API key in settings, and the backend intelligently auto-routes processing to **Groq** (insanely fast, free) or **OpenAI** (premium) based on the key signature (`gsk_` vs `sk-`).
-- **Automated Task Extraction**: Automatically parses transcripts to find actionable "To-Do" items, assigning them titles, descriptions, and dynamic priority levels (High, Medium, Low).
-- **Beautiful Dashboard**: A "Mariana Trench" level UI built with Next.js, Tailwind CSS, and Recharts, featuring full Dark Mode support, gorgeous micro-animations, and dynamic data visualization.
-- **Asynchronous Processing Pipeline**: Videos are processed in the background. The UI automatically polls and updates from a "Processing" state to "Completed" with smooth transitions.
+- 🎯 **Multi-Modal Uploads**: Seamlessly upload `.mp4` video files, `.mp3`/`.wav` audio files, or plain text meeting notes.
+- 🌍 **Auto-Language Detection**: The AI natively identifies the spoken language and transcribes it directly in that exact language with near 100% accuracy.
+- ⚡ **Smart Provider Auto-Routing**: Paste your API key in settings, and the backend intelligently auto-routes processing to **Groq** (insanely fast, free) or **OpenAI** (premium) based on the key signature (`gsk_` vs `sk-`).
+- ✅ **Automated Task Extraction**: Automatically parses transcripts to find actionable "To-Do" items, assigning them titles, descriptions, and dynamic priority levels (High, Medium, Low).
+- 🎨 **Beautiful Dashboard**: A "Mariana Trench" level UI built with Next.js, Tailwind CSS, and Recharts, featuring full Dark Mode support, gorgeous micro-animations, and dynamic data visualization.
+- 🔄 **Asynchronous Processing Pipeline**: Videos are processed in the background. The UI automatically polls and updates from a "Processing" state to "Completed" with smooth transitions.
 
-## 🏗️ Tech Stack
+## 🏗️ System Architecture
 
-**Frontend:**
-- Framework: Next.js (React)
-- Styling: Tailwind CSS & Framer Motion
-- UI Components: shadcn/ui & Radix UI
-- State Management: Zustand
+```mermaid
+graph LR
+    A[Client Frontend - Next.js] -->|Upload Video/Audio| B(Backend Express API)
+    B --> C{Smart Routing}
+    C -->|gsk_key| D[Groq API - Whisper & Llama3]
+    C -->|sk-key| E[OpenAI API - Whisper & GPT-4]
+    D --> F[MongoDB Database]
+    E --> F
+    F -->|Polling/Websockets| A
+```
 
-**Backend:**
-- Runtime: Node.js with TypeScript
-- Framework: Express.js
-- Database: MongoDB (Mongoose ORM)
-- AI SDK: Official OpenAI Node SDK (Routed to Groq/OpenAI)
+## 🛠️ Tech Stack
+
+### Frontend
+- **Framework:** Next.js 14 (React)
+- **Styling:** Tailwind CSS & Framer Motion
+- **UI Components:** shadcn/ui & Radix UI
+- **State Management:** Zustand
+
+### Backend
+- **Runtime:** Node.js with TypeScript
+- **Framework:** Express.js
+- **Database:** MongoDB (Mongoose ORM)
+- **AI SDK:** Official OpenAI Node SDK (Routed to Groq/OpenAI)
 
 ## ⚙️ Local Installation & Setup
 
@@ -50,7 +73,7 @@ The architecture strictly separates the frontend client from the background AI p
 
 ### 2. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/nexus-ai-converter.git
+git clone https://github.com/muhammadtaimoorajmal/nexus-ai-converter.git
 cd nexus-ai-converter
 ```
 
@@ -90,8 +113,25 @@ npm run dev
 3. **Upload a Meeting**: Go to the Dashboard and click "New Meeting". Select a video/audio file.
 4. **View Results**: Click on the processing meeting. Once complete, view your perfectly translated transcript, summary, and organized action items!
 
+## 🛣️ Roadmap
+
+- [ ] Add Google Calendar integration to directly schedule tasks.
+- [ ] Support for direct meeting bot recording (Zoom, Google Meet).
+- [ ] Export transcripts to PDF / Notion.
+- [ ] Implement team workspaces.
+
+## 🤝 Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
 ---
 
 <div align="center">
-  <i>Developed with ❤️ by Muhammad Taimoor Ajmal</i>
+  <i>Developed with ❤️ by <a href="https://github.com/muhammadtaimoorajmal">Muhammad Taimoor Ajmal</a></i>
 </div>
