@@ -10,7 +10,7 @@ An enterprise-grade, full-stack AI application that effortlessly converts audio,
 [![Groq](https://img.shields.io/badge/Groq-AI_Engine-f55036?style=flat)](https://groq.com/)
 [![OpenAI](https://img.shields.io/badge/OpenAI-Whisper-412991?style=flat&logo=openai)](https://openai.com/)
 
-[**Live Demo**](https://nexus-ai-converter.vercel.app/) • [**Report Bug**](https://github.com/muhammadtaimoorajmal/nexus-ai-converter/issues) • [**Request Feature**](https://github.com/muhammadtaimoorajmal/nexus-ai-converter/issues)
+[**Live Demo**](https://nexus-ai-converter-frontend.vercel.app/) • [**Report Bug**](https://github.com/muhammadtaimoorajmal/nexus-ai-converter/issues) • [**Request Feature**](https://github.com/muhammadtaimoorajmal/nexus-ai-converter/issues)
 
 </div>
 
