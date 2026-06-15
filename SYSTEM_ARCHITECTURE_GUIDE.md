@@ -43,7 +43,7 @@ The database is where all your users, passwords, transcripts, and tasks are perm
 When you are ready to launch this project to the public (e.g., deploying on a web panel like Vercel, Render, or AWS), you **cannot** use the MongoDB installed on your personal C: drive.
 * Instead, we use a cloud database service called **MongoDB Atlas**.
 * MongoDB Atlas is essentially a massive, highly secure server farm owned by MongoDB (hosted on AWS or Google Cloud).
-* You will create a free account on their website, and they will give you a "Connection String" (a URL that looks like `MongoDB Atlas will provide a connection string similar to:  mongodb+srv://[username]:[password]@[cluster].mongodb.net`).
+* You will create a free account on their website, and they will give you a "Connection String" (a URL that looks like `Example Atlas Connection String: <your-mongodb-atlas-connection-string-here>`).
 * We will paste that URL into your deployed backend's `.env` file. 
 * From then on, when a user uploads a video, your web server processes it, and saves the text data directly to the **MongoDB Atlas servers** in the cloud.
 
