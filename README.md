@@ -5,7 +5,8 @@
 
   <p align="center">
     <strong>Turn your meetings into clear, actionable plans automatically.</strong><br/>
-    An enterprise-grade, full-stack AI application that effortlessly converts audio, video, and text meetings into highly accurate transcripts, professional summaries, and priority-sorted action lists.
+    NexusAI is a full-stack AI platform that automates meeting workflows by converting audio, video, and text discussions into searchable transcripts, intelligent summaries, and actionable task lists.
+
   </p>
 
   <p align="center">
@@ -49,10 +50,10 @@ The architecture strictly separates the frontend client from the background AI p
 ## ✨ Key Features
 
 - 🎯 **Multi-Modal Uploads**: Seamlessly upload `.mp4` video files, `.mp3`/`.wav` audio files, or plain text meeting notes.
-- 🌍 **Auto-Language Detection**: The AI natively identifies the spoken language and transcribes it directly in that exact language with near high-accuracy multilingual transcription.
+- 🌍 Auto-Language Detection: Automatically detects the spoken language and generates high-accuracy multilingual transcripts in the original language.
 - ⚡ **Smart Auto-Deletion Engine**: Uploaded media files are automatically scrubbed from the server and automatically deleted after processing completes to ensure infinite scalability and zero memory leaks.
 - ✅ **Automated Task Extraction**: Automatically parses transcripts to find actionable "To-Do" items, assigning them titles, descriptions, and dynamic priority levels (High, Medium, Low).
-- 🎨 **Beautiful UI/UX**: A "Modern UI" level UI built with Next.js, Tailwind CSS, and Shadcn UI, featuring full Dark Mode support, gorgeous micro-animations, and dynamic data visualization.
+- 🎨 Modern UI/UX: Built with Next.js, Tailwind CSS, Framer Motion, and Shadcn UI, featuring dark mode, smooth animations, and responsive layouts.
 - 📱 **100% Mobile Responsive**: Includes a stunning slide-out mobile sidebar for on-the-go meeting uploads.
 
 ---
