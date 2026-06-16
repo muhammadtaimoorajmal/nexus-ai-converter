@@ -49,10 +49,10 @@ The architecture strictly separates the frontend client from the background AI p
 ## ✨ Key Features
 
 - 🎯 **Multi-Modal Uploads**: Seamlessly upload `.mp4` video files, `.mp3`/`.wav` audio files, or plain text meeting notes.
-- 🌍 **Auto-Language Detection**: The AI natively identifies the spoken language and transcribes it directly in that exact language with near 100% accuracy.
-- ⚡ **Smart Auto-Deletion Engine**: Uploaded media files are automatically scrubbed from the server the millisecond processing is complete to ensure infinite scalability and zero memory leaks.
+- 🌍 **Auto-Language Detection**: The AI natively identifies the spoken language and transcribes it directly in that exact language with near high-accuracy multilingual transcription.
+- ⚡ **Smart Auto-Deletion Engine**: Uploaded media files are automatically scrubbed from the server and automatically deleted after processing completes to ensure infinite scalability and zero memory leaks.
 - ✅ **Automated Task Extraction**: Automatically parses transcripts to find actionable "To-Do" items, assigning them titles, descriptions, and dynamic priority levels (High, Medium, Low).
-- 🎨 **Beautiful UI/UX**: A "Mariana Trench" level UI built with Next.js, Tailwind CSS, and Shadcn UI, featuring full Dark Mode support, gorgeous micro-animations, and dynamic data visualization.
+- 🎨 **Beautiful UI/UX**: A "Modern UI" level UI built with Next.js, Tailwind CSS, and Shadcn UI, featuring full Dark Mode support, gorgeous micro-animations, and dynamic data visualization.
 - 📱 **100% Mobile Responsive**: Includes a stunning slide-out mobile sidebar for on-the-go meeting uploads.
 
 ---
